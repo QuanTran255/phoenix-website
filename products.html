@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - DolphyAI Safety Intelligence Platform</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/layout.css">
+</head>
+<body>
+    <!-- ==========================================
+         NAVIGATION
+         ========================================== -->
+    <nav id="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">DolphyAI</a></div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="usecases.html">Use Cases</a></li>
+            <!-- <li><a href="updates.html">Development</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================
+         PRODUCTS PAGE
+         ========================================== -->
+    <section>
+        <h2>Our Platform</h2>
+        <p class="section-description">DolphyAI is a comprehensive safety intelligence system designed specifically for the construction industry.</p>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3 class="product-title">Intelligent Vision System</h3>
+                <p class="product-description">Powered by state-of-the-art object detection model with DINOv2 backbone, DolphyAI achieves superior small-object detection critical for construction safety. The system processes 4K video in real-time using advanced slicing technology, maintaining perfect clarity while running efficient edge inference on NVIDIA Jetson Orin Nano, delivering real-time results directly on-site.</p>
+            </div>
+            <div class="product-card">
+                <h3 class="product-title">Safety Rules Engine</h3>
+                <p class="product-description">Translates raw visual data into actionable safety intelligence. Our geometric rules engine detects proximity hazards, PPE violations, unsafe positioning, and environmental risks. Every alert is automatically classified by severity and matched to OSHA standards with full evidence documentation.</p>
+            </div>
+            <div class="product-card">
+                <h3 class="product-title">Cloud Intelligence Platform</h3>
+                <p class="product-description">Centralized storage and analysis of all safety events. Your data is securely ingested via API, archived in our PostgreSQL system, and supplemented with AI-powered insights. Query your safety data naturally—our LLM agent translates plain language into instant reports and trend analysis.</p>
+            </div>
+            <div class="product-card">
+                <h3 class="product-title">Real-Time Dashboard</h3>
+                <p class="product-description">Beautiful React-based interface providing instant visibility into site safety. Monitor live alerts, review historical incidents, analyze trends, and generate compliance reports—all in one unified platform accessible from any device.</p>
+            </div>
+            <div class="product-card">
+                <h3 class="product-title">Synthetic Training & Robustness</h3>
+                <p class="product-description">Leveraging NVIDIA Omniverse, DolphyAI is trained on photorealistic synthetic construction scenarios representing diverse environments, lighting conditions, and hazardous situations. This ensures exceptional accuracy and robustness across all real-world site conditions without relying on dangerous incident recording.</p>
+            </div>
+        </div>
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="contact.html" class="cta-button">Request a Demo</a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer>
+        <p>&copy; 2025 DolphyAI Safety Intelligence. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for navbar behavior -->
+    <script src="js/navbar.js"></script>
+</body>
+</html>

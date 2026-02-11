@@ -3,78 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DolphyAI - Coming Soon</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #E74C3C 0%, #FFD700 100%);
-        }
-
-        .container {
-            text-align: center;
-            padding: 40px 20px;
-            max-width: 600px;
-        }
-
-        h1 {
-            font-size: 4rem;
-            color: #ffffff;
-            margin-bottom: 20px;
-            animation: fadeIn 1s ease-in;
-        }
-
-        p {
-            font-size: 1.5rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 40px;
-            animation: fadeIn 1.2s ease-in;
-        }
-
-        .footer {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.7);
-            animation: fadeIn 1.4s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            p {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
+    <title>DolphyAI - Real-Time Safety Intelligence Platform</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/layout.css">
 </head>
 <body>
-    <div class="container">
-        <h1>DolphyAI</h1>
-        <p>is coming soon</p>
-        <div class="footer">
-            <p>The future of construction monitoring is amazing</p>
-        </div>
+    <!-- ==========================================
+         NAVIGATION
+         ========================================== -->
+    <nav id="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">DolphyAI</a></div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="usecases.html">Use Cases</a></li>
+            <!-- <li><a href="updates.html">Development</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page Content Only -->
+    <div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Real-Time Safety Intelligence for Construction</h1>
+                    <div class="slogan">Safety for the Future</div>
+                    <p>Prevent incidents before they happen with AI-powered computer vision that monitors every moment of your site.</p>
+                    <div class="features-list">
+                        <div class="feature-item">4K Ultra-High Resolution</div>
+                        <div class="feature-item">Edge Processing</div>
+                        <div class="feature-item">OSHA Compliance</div>
+                        <div class="feature-item">Real-Time Detection</div>
+                    </div>
+                    <button class="cta-button" onclick="location.href='products.html'">Learn More</button>
+                </div>
+                
+                <!-- Video Carousel -->
+                <div class="hero-video">
+                    <div class="video-carousel" id="videoCarousel">
+                        <div class="carousel-slide active">
+                            <video width="100%" height="100%" style="object-fit: cover;" controls>
+                                <source src="videos/video1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="carousel-slide">
+                            <video width="100%" height="100%" style="object-fit: cover;" controls>
+                                <source src="videos/video2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" onclick="carouselPrev()">‹</button>
+                        <button class="carousel-btn" onclick="carouselNext()">›</button>
+                    </div>
+                    <div class="slide-indicator"><span id="slideNum">1</span> / 2</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="alt-bg">
+            <h2>Why Choose DolphyAI?</h2>
+            <p class="section-description">Our advanced AI platform delivers enterprise-grade safety monitoring with unmatched accuracy and responsiveness.</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3 class="product-title">📹 4K Resolution Slicing</h3>
+                    <p class="product-description">We don't compromise on clarity. Our proprietary slicing technology processes 4K video without downscaling, ensuring no detail is missed—critical for detecting small safety hazards like exposed harnesses and PPE violations.</p>
+                </div>
+                <div class="product-card">
+                    <h3 class="product-title">⚡ Edge Processing</h3>
+                    <p class="product-description">Real-time inference runs directly on your site's infrastructure using NVIDIA Jetson Orin Nano edge computers. No cloud dependency means instant alerts, reduced latency, and complete data privacy for your operations with powerful on-device AI processing.</p>
+                </div>
+                <div class="product-card">
+                    <h3 class="product-title">✅ OSHA Compliance Ready</h3>
+                    <p class="product-description">Built with regulatory requirements in mind. Automatically generates audit trails, event documentation, and evidence logs required for OSHA inspections and insurance claims.</p>
+                </div>
+                <div class="product-card">
+                    <h3 class="product-title">🎯 Synthetic Training & Robustness</h3>
+                    <p class="product-description">Trained on photorealistic synthetic scenarios via NVIDIA Omniverse, DolphyAI delivers exceptional accuracy across diverse environments and conditions without compromising safety during model development.</p>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <!-- ==========================================
+         PRODUCTS PAGE - Removed (now in products.html)
+         ========================================== -->
+
+    <!-- ==========================================
+         USE CASES PAGE - Removed (now in usecases.html)
+         ========================================== -->
+
+    <!-- ==========================================
+         DEVELOPMENT UPDATES PAGE - Removed (now in updates.html)
+         ========================================== -->
+
+    <!-- ==========================================
+         CONTACT PAGE - Removed (now in contact.html)
+         ========================================== -->
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer>
+        <p>&copy; 2025 DolphyAI Safety Intelligence. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for navbar behavior -->
+    <script src="js/navbar.js"></script>
+    <!-- Carousel functionality for home page -->
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 2;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            if (n >= totalSlides) currentSlide = 0;
+            if (n < 0) currentSlide = totalSlides - 1;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+            document.getElementById('slideNum').textContent = currentSlide + 1;
+        }
+
+        function carouselNext() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function carouselPrev() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    </script>
 </body>
 </html>
